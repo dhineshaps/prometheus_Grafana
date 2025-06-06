@@ -1,0 +1,15 @@
+{
+  "name": "Prometheus Monitoring Stack",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "prometheus",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [3000, 9090, 9100, 9093, 8080],
+  "postCreateCommand": "docker-compose up -d",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
